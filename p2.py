@@ -7,12 +7,12 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 find the sum of the even-valued terms."""
 
 max = 4000000
-def fibonacci(n, m, sum=0):
+def sum_fibonacci_odds(n, m, sum=0):
    if n <= max:
       if n % 2 != 0:
          sum += n
-      return fibonacci(m, n+m, sum)
+      return sum_fibonacci_odds(m, n+m, sum)
    else:
       return sum
 
-print(fibonacci(1, 1))
+print(sum_fibonacci_odds(1, 1))
