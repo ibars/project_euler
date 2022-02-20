@@ -11,8 +11,8 @@ def is_palindrome(number):
       return True
    return False
 
-for i in range(999,1,-1):
-   for j in range(i,1,-1):
+for i in range(999,100,-1):
+   for j in range(i,100,-1):
       if is_palindrome(i*j) and i*j > result:
          result = i*j
 
